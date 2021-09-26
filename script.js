@@ -35,7 +35,7 @@ const getWeather=async (city)=>
         loc.textContent=name;
         climate.textContent=main;
         tempvalue.textContent=Math.round(feels_like-273);
-        if(id<800 && id>700)
+        if(id<300 && id>200)
         {
             tempicon.src="Images/thunderstorm.png"
         }
@@ -51,7 +51,7 @@ const getWeather=async (city)=>
         {
             tempicon.src="Images/snow.svg"
         }
-       else  if(id<200 && id>300)
+       else  if(id<800 && id>700)
         {
             tempicon.src="Images/clouds.svg"
         }
